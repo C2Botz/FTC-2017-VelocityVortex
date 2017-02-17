@@ -36,9 +36,33 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <item
     android:id="@+id/action_blocks"
     android:orderInCategory="98"
-    android:showAsAction="never" 
+    android:showAsAction="never"
     android:visible="false"
     android:title="@string/blocks_menu_item"/>
+  <item
+      android:id="@+id/action_alliance"
+      android:orderInCategory="100"
+      android:showAsAction="never"
+      android:title="Set Alliance Color">
+      <menu>
+          <item android:id="@+id/red_alliance" android:title="Red"/>
+          <item android:id="@+id/blue_alliance" android:title="Blue"/>
+      </menu>
+
+  </item>
+
+<item
+    android:id="@+id/action_automode"
+    android:orderInCategory="100"
+    android:showAsAction="never"
+    android:title="Set Autonomous Mode">
+    <menu>
+        <item android:id="@+id/auto_beacon" android:title="Beacon Activation"/>
+        <item android:id="@+id/auto_corner" android:title="Move to Corner"/>
+        <item android:id="@+id/auto_capball" android:title="Push Cap Ball"/>
+    </menu>
+
+</item>
   <item
     android:id="@+id/action_settings"
     android:orderInCategory="99"
@@ -46,13 +70,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     android:title="@string/settings_menu_item"/>
   <item
     android:id="@+id/action_restart_robot"
-    android:orderInCategory="100"
+    android:orderInCategory="101"
     android:showAsAction="never"
     android:title="@string/restart_robot_menu_item"/>
 
   <item
     android:id="@+id/action_configure_robot"
-    android:orderInCategory="101"
+    android:orderInCategory="102"
     android:showAsAction="never"
     android:title="@string/configure_robot_menu_item"/>
 

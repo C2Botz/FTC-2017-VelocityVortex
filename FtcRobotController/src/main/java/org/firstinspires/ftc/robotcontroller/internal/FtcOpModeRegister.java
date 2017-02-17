@@ -35,6 +35,8 @@ import com.google.blocks.ftcrobotcontroller.runtime.BlocksOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.OpModeManager;
 import com.qualcomm.robotcore.eventloop.opmode.OpModeRegister;
 import com.qualcomm.robotcore.eventloop.opmode.AnnotatedOpModeRegistrar;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+
 import org.firstinspires.ftc.robotcontroller.external.samples.ConceptNullOp;
 
 /**
@@ -68,7 +70,6 @@ public class FtcOpModeRegister implements OpModeRegister {
          * Register OpModes implemented in the Blocks visual programming language.
          */
         BlocksOpMode.registerAll(manager);
-
         /**
          * Register OpModes that use the annotation-based registration mechanism.
          */

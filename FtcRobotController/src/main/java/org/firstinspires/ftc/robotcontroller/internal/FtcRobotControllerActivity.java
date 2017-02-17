@@ -52,6 +52,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import com.google.blocks.ftcrobotcontroller.BlocksActivity;
@@ -104,6 +105,8 @@ public class FtcRobotControllerActivity extends Activity {
   private static final int NUM_GAMEPADS = 2;
 
   public static final String NETWORK_TYPE_FILENAME = "ftc-network-type.txt";
+  public static String allianceColorString = "NULL";
+    public static String autoModeString = "NULL";
 
   protected WifiManager.WifiLock wifiLock;
   protected RobotConfigFileManager cfgFileMgr;
@@ -442,6 +445,18 @@ public class FtcRobotControllerActivity extends Activity {
     else if (id == R.id.action_exit_app) {
       finish();
       return true;
+    }else if (id == R.id.red_alliance) {
+        System.out.println("Red!");
+        allianceColorString = "RED";
+    }else if (id == R.id.blue_alliance) {
+        System.out.println("Blue!");
+        allianceColorString = "BLUE";
+    }else if(id == R.id.auto_beacon){
+        autoModeString = "BEACON";
+    }else if(id == R.id.auto_corner){
+        autoModeString = "CORNER";
+    }else if(id == R.id.auto_capball){
+        autoModeString = "CAPBALL";
     }
 
    return super.onOptionsItemSelected(item);
